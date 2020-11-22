@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projeto Iniciado em 12/03/2019</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div>
+        <nav>
+            <hr>
+            <a href="index.html">Instituto</a> |
+            <a href="ensino.html">Ensino</a> |
+            <a href="aluno.html">Aluno</a> |
+            <a href="vestibular.html">Vestibular</a> |
+            <a href="inscreva.html">Inscreva-se</a> |
+            <hr>
+        </nav>
+
+        <h3>INSCREVA-SE NO VESTIBULAR 2019</h3>
+        <form action="cadastro.php" method="post">
+            <P>
+                <label for="nome">
+                    Nome do Aluno:
+                </label>
+                <input type="text" name="txtNome" id="nome" size="50" placeholder="Digite seu nome">
+
+                <label for="usuario">
+                    Nome de Usuário:
+                </label>
+                <input type="text" name="txtUsuario" id="usuario" size="10" maxlength="10" placeholder="Max. 10 Carac.">
+
+                <label for="senha">
+                    Digite sua senha:
+                </label>
+                <input type="password" name="txtSenha" id="senha" size="6" maxlength="6" placeholder="MAX. 6">
+
+                <label for="foto">Selecione Sua Foto:</label>
+                <input type="file" name="txtfoto" id="foto"> 
+            </P> 
+            <P>
+                <label for="endereco">
+                    Endereço:
+                </label>
+                <input type="text" name="txtEnd" id="endereco" size="60" placeholder="Digite se endereço">
+
+                <label for="numero">
+                    Número:
+                </label>
+                <input type="number" name="txtNumero" id="numero" max="9999" min="0">
+
+                <label for="bairro">
+                    Bairro:
+                </label>
+                <input type="text" name="txtBairro" id="bairro" size="20" placeholder="Digite se bairro">
+
+                <label for="cidade">
+                    Cidade:
+                </label>
+                <select name="txtCidade" id="cidade">
+                    <option value="mogimirim">Mogi Mirim</option>
+                    <option value="itapira">itapira</option>
+                    <option value="mogiguacu">Mogi Guaçu</option>
+                    <option value="aguaslindoia">Águas de Lindóia</option>
+                    <option value="jacutinga">Jacutinga</option>
+                    <option value="monteSiao">Monte Sião</option>
+                    <option value="lindoia">Lindóia</option>
+                    <option value="santotome">São thomé das Letras</option>
+                    <option value="paraty">Paraty</option>
+                    <option value="amparo">Amparo</option>
+                </select>
+                <label for="estado">
+                    Estado
+                </label>
+                <select name="txtEstado" id="estado">
+                    <option value="sp">SP</option>
+                    <option value="mg">MG</option>
+                    <option value="rj">RJ</option>
+                    <option value="es">ES</option>
+                    <option value="pr">PR</option>
+                    <option value="to">TO</option>
+                    <option value="ba">BA</option>
+                </select>
+            </P>
+            <p>
+                <label for="telefone">
+                    Telefone:
+                </label>
+                <input type="tel" name="txtTelefone" id="telefone" placeholder="(19)99999-9999">
+
+                <label for="email">
+                    E-Mail:
+                </label>
+                <input type="email" name="txtEmail" id="email" size="120" placeholder="exemplo@exemplo.com">
+            </p>
+             <p>
+                 <label for="nascimento">
+                     Data de Nascimento:
+                 </label>
+                 <input type="date" name="txtNasc" id="nascimento">
+             </p>
+             <p>
+                 <label for="EstadoCivil">Estado Civil:</label><br>
+                 <input type="radio" name="EstadoCivil" id="casado"> Casado 
+                 <input type="radio" name="EstadoCivil" id="solteiro"> Solteiro
+                 <input type="radio" name="EstadoCivil" id="divorciado"> Divorciado 
+                 <input type="radio" name="EstadoCivil" id="viuvo"> Viúvo
+             </p>
+             <fieldset>
+                 <legend>Séries Favoritas:</legend>
+                 <p>
+                     <input type="checkbox" name="txtGot" id="got"> Game of Thrones
+                     <input type="checkbox" name="txtGot" id="papel"> La Casa de Papel
+                     <input type="checkbox" name="txtGot" id="suits"> Suits
+                     <input type="checkbox" name="txtGot" id="good"> Good Doctor
+                     <input type="checkbox" name="txtGot" id="break"> Breaking Bad
+                     <input type="checkbox" name="txtGot" id="walk"> The walking Dead
+                     <input type="checkbox" name="txtGot" id="carc"> Carceireiros
+                     <input type="checkbox" name="txtGot" id="mecanismo"> Mecanismo
+                     <input type="checkbox" name="txtGot" id="narcos"> narcos
+                     <input type="checkbox" name="txtGot" id="3porc"> 3%
+                 </p>
+             </fieldset>
+             <p>
+                 <label for="coment">Deixe seu Comentário</label><br>
+                 <textarea name="txtComen" id="coment" cols="50" rows="20"></textarea>
+             </p>
+
+            <p>
+                <input type="submit" value="enviar">
+                <input type="reset" value="limpar">
+            </p>
+
+        </form>
+    </div>
+    <div>
+        <footer style="text-align: center;">
+            <p>Todos os direitos reservados © 2002-2019 - UNIESI<br>
+                <a href="https://pt-br.facebook.com/UnIesiOficial/" target="_blank">Facebook</a>
+
+            </p>
+
+
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
